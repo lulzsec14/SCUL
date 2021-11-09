@@ -31,7 +31,7 @@ public class Controller {
         headers.put("server", Collections.singletonList("codeofChitkara"));
         HttpStatus status = HttpStatus.CREATED;
         ResponseEntity<User> response =
-                new ResponseEntity<User>(user1,headers,status);
+                new ResponseEntity<User>(findUser,headers,status);
 //        return findUser;
         return response;
     }
